@@ -29,7 +29,8 @@ function increase() {
 function decrement() {
     let outputValue = output.value;
     
-    outputValue--;
+    if (outputValue > 0)
+        outputValue--;  
     
     output.value = outputValue;
 }
