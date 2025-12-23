@@ -3,6 +3,7 @@ console.log('javascript is connected');
 
 const upCount = document.querySelector('#up-count');
 const downCount = document.querySelector('#down-count');
+const resetButton = document.querySelector('#reset');
 
 const output = document.querySelector('output');
 
@@ -13,6 +14,11 @@ upCount.addEventListener('click', function() {
 downCount.addEventListener('click', function() {
     decrement();
 })
+
+resetButton.addEventListener('click', function() {
+    reset();
+})
+
 
 function increase() {
     let outputValue = output.value;
@@ -32,14 +38,10 @@ function decrement() {
     output.value = outputValue;
 }
 
-// const resetButton = document.querySelector('#reset');
 
-// function reset() {
-//     output.value = 0;
-// }
+function reset() {
+    output.value = 0;
+}
 
 
-// resetButton.addEventListener('click', function() {
-//     reset();
-// })
 
