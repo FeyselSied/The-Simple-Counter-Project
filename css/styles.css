@@ -2,4 +2,8 @@
 /* for testing purpose */
 body {
     background-color: lightcoral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
 }
