@@ -15,10 +15,6 @@ downCount.addEventListener('click', function() {
     decrement();
 })
 
-resetButton.addEventListener('click', function() {
-    reset();
-})
-
 
 function increase() {
     let outputValue = output.value;
@@ -36,11 +32,6 @@ function decrement() {
     outputValue--;
     
     output.value = outputValue;
-}
-
-
-function reset() {
-    output.value = 0;
 }
 
 
